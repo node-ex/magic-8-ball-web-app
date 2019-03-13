@@ -11,6 +11,7 @@
     "lint:eslint:fix": "eslint --ext .js,.ts,.json,.html,.vue --ignore-path .eslintignore --fix .",
     "lint:stylelint": "stylelint '**.css' '**/*.scss' '**/*.vue' --ignore-path .stylelintignore",
     "lint:stylelint:fix": "stylelint '**.css' '**/*.scss' '**/*.vue' --ignore-path .stylelintignore --fix",
+    "lint:typescript": "tsc --allowJs --checkJs --noEmit",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -27,7 +28,7 @@
     "@vue/cli-plugin-eslint": "3.5.0",
     "@vue/cli-plugin-pwa": "3.5.0",
     "@vue/cli-plugin-typescript": "3.5.0",
-    "@vue/cli-plugin-unit-jest": "3.5.0",
+    "@vue/cli-plugin-unit-jest": "3.5.1",
     "@vue/cli-service": "3.5.0",
     "@vue/eslint-config-typescript": "4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
@@ -35,6 +36,7 @@
     "babel-eslint": "10.0.1",
     "documentation": "9.3.1",
     "eslint": "5.8.0",
+    "eslint-plugin-json": "1.4.0",
     "eslint-plugin-vue": "5.0.0",
     "fibers": "3.1.1",
     "lint-staged": "8.1.5",

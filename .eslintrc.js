@@ -7,6 +7,9 @@ module.exports = {
     'jest': true,
     'worker': true
   },
+  plugins: [
+    'json'
+  ],
   extends: [
     'plugin:vue/recommended',
     'eslint:recommended',
@@ -22,7 +25,7 @@ module.exports = {
     }],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-var': 2,
+    'no-var': 'error',
     'prefer-const': ['error', {
       destructuring: 'all',
       ignoreReadBeforeAssign: false
@@ -30,7 +33,8 @@ module.exports = {
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', 'never'],
+    '@typescript-eslint/no-explicit-any': 'error'
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -38,4 +42,4 @@ module.exports = {
       project: './tsconfig.json'
     }
   }
-}
+};
