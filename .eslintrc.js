@@ -16,6 +16,7 @@ module.exports = {
     '@vue/typescript'
   ],
   rules: {
+    '@typescript-eslint/no-explicit-any': 'error',
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],
     'max-len': ['warn', {
@@ -34,7 +35,7 @@ module.exports = {
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
-    '@typescript-eslint/no-explicit-any': 'error'
+    'vue/component-name-in-template-casing': ['error', 'kebab-case']
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
