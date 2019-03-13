@@ -1,0 +1,39 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Node.js: Launch",
+      "request": "launch",
+      "type": "node",
+      "protocol": "inspector",
+      "address": "localhost",
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      "sourceMaps": true,
+      "cwd": "${workspaceRoot}",
+      "outFiles": [
+        "${workspaceRoot}/dist/*.js",
+        "${workspaceRoot}/dist/**/*.js"
+      ],
+      "autoAttachChildProcesses": true,
+      "smartStep": true,
+      "program": "${file}",
+      "envFile": "${workspaceFolder}/.env",
+      "preLaunchTask": "build",
+      "showAsyncStacks": true,
+      "stopOnEntry": false,
+      "internalConsoleOptions": "openOnFirstSessionStart",
+      "console": "internalConsole"
+    },
+    {
+      "name": "Docker: Attach to Node",
+      "type": "node",
+      "request": "attach",
+      "remoteRoot": "/usr/src/app"
+    }
+  ]
+}

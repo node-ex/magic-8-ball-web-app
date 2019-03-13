@@ -1,0 +1,47 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    // # General
+    "Shan.code-settings-sync",
+    "sandcastle.vscode-open",
+    "christian-kohler.path-intellisense",
+    "ryu1kn.partial-diff",
+    "wayou.vscode-todo-highlight",
+    "formulahendry.code-runner",
+    "anseki.vscode-color",
+    "editorconfig.editorconfig",
+    // # Programming and markup languages
+    // ## CSS, SASS, SCSS
+    "shinnn.stylelint",
+    "aeschli.vscode-css-formatter",
+    // ## HTML
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    // ## JavaScript
+    "dbaeumer.vscode-eslint",
+    "wix.vscode-import-cost",
+    "HookyQR.JSDocTagComplete",
+    "joelday.docthis",
+    "mikestead.dotenv",
+    // ## Node.js
+    "leizongmin.node-module-intellisense",
+    // ## Shell
+    "timonwong.shellcheck",
+    // # Technologies
+    // ## git
+    "eamodio.gitlens",
+    // ## Docker
+    "PeterJausovec.vscode-docker",
+    // ## SQL
+    "mtxr.sqltools",
+    // # Natural language
+    // "adamvoss.vscode-languagetool",
+    // "adamvoss.vscode-languagetool-en",
+    // "streetsidesoftware.code-spell-checker",
+    // "ban.spellright"
+  ],
+  // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+  "unwantedRecommendations": []
+}

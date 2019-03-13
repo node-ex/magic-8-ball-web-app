@@ -1,0 +1,5 @@
+*-lock.json
+coverage
+dist
+node-modules
+zz_backup
