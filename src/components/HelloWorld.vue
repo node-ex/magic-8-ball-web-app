@@ -202,3 +202,12 @@ a {
   color: $color-secondary;
 }
 </style>
+
+<docs>
+`HelloWorld` example:
+
+
+```jsx
+<hello-world msg="Welcome to Your Vue.js + TypeScript App" />
+```
+</docs>
