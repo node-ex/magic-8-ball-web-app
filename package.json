@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build --mode production",
-    "lint": "npm run lint:eslint ; npm run lint:stylelint",
+    "build": "vue-cli-service build --mode production --report",
+    "start": "http-server ./dist",
     "dev": "vue-cli-service serve --mode development",
+    "lint": "npm run lint:eslint ; npm run lint:stylelint",
     "lint:eslint": "eslint --ext .js,.ts,.json,.html,.vue --ignore-path .eslintignore .",
     "lint:eslint:fix": "eslint --ext .js,.ts,.json,.html,.vue --ignore-path .eslintignore --fix .",
     "lint:fix": "npm run lint:eslint:fix ; npm run lint:stylelint:fix",
@@ -17,6 +18,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "http-server": "0.11.1",
     "register-service-worker": "1.6.2",
     "vue": "2.6.6",
     "vue-class-component": "6.0.0",
@@ -36,6 +38,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
+    "babel-plugin-transform-remove-console": "6.9.4",
     "documentation": "9.3.1",
     "eslint": "5.8.0",
     "eslint-plugin-json": "1.4.0",
