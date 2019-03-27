@@ -12,10 +12,29 @@
     "formulahendry.code-runner",
     "anseki.vscode-color",
     "editorconfig.editorconfig",
+    "coenraads.bracket-pair-colorizer-2",
+    "wmaurer.vscode-jumpy",
+    "alefragnani.bookmarks",
+    "ms-vsliveshare.vsliveshare",
+    "ms-vsliveshare.vsliveshare-audio",
+    "lostintangent.vsls-whiteboard",
+    "karigari.chat",
+    "codestream.codestream",
+    "softwaredotcom.swdc-vscode",
+    "ritwickdey.liveserver",
+    "hbenl.vscode-test-explorer",
+    "hbenl.vscode-test-explorer-liveshare",
+    "humao.rest-client",
+    "visualstudioexptteam.vscodeintellicode",
+    "oderwat.indent-rainbow",
+    "nhoizey.gremlins",
+    "shardulm94.trailing-spaces",
     // # Programming and markup languages
     // ## CSS, SASS, SCSS
     "shinnn.stylelint",
     "aeschli.vscode-css-formatter",
+    "pranaygp.vscode-css-peek",
+    "gencer.html-slim-scss-css-class-completion",
     // ## HTML
     "formulahendry.auto-rename-tag",
     "formulahendry.auto-close-tag",
@@ -25,15 +44,35 @@
     "HookyQR.JSDocTagComplete",
     "joelday.docthis",
     "mikestead.dotenv",
+    "wallabyjs.quokka-vscode",
+    "kisstkondoros.vscode-codemetrics",
+    // ## LaTeX
+    // "james-yu.latex-workshop",
+    // "nickfode.latex-formatter",
     // ## Node.js
     "leizongmin.node-module-intellisense",
+    "christian-kohler.npm-intellisense",
+    "jasonnutter.search-node-modules",
+    // ## Python
+    // "littlefoxteam.vscode-python-test-adapter",
+    // "dongli.python-preview",
+    // ## Vue
+    "octref.vetur",
+    "dariofuzinato.vue-peek",
+    // "oysun.vuehelper",
+    // "hollowtree.vue-snippets",
+    // "sdras.vue-vscode-snippets",
+    // "lissetteibnz.vscode-vue-typescript-sfc-snippets",
     // ## Shell
     "timonwong.shellcheck",
     // # Technologies
-    // ## git
-    "eamodio.gitlens",
     // ## Docker
     "PeterJausovec.vscode-docker",
+    // ## git
+    "eamodio.gitlens",
+    "piotrpalarz.vscode-gitignore-generator",
+    // ## Jest
+    "rtbenfield.vscode-jest-test-adapter",
     // ## SQL
     "mtxr.sqltools",
     // # Natural language
