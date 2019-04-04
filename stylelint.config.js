@@ -10,10 +10,13 @@ module.exports = {
     'color-format/format': {
       format: 'hsl'
     },
+    'selector-max-compound-selectors': 10,
     'color-named': 'always-where-possible',
     'declaration-colon-newline-after': null,
     'no-empty-source': null,
     'scss/at-function-parentheses-space-before': 'never',
+    'block-closing-brace-empty-line-before': null,
+    'max-nesting-depth': 10,
     'scss/at-function-named-arguments': [
       'always',
       {
@@ -26,7 +29,8 @@ module.exports = {
           'lighten',
           'nth',
           'quote',
-          'red'
+          'red',
+          'counter'
         ]
       }
     ],

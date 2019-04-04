@@ -21,6 +21,8 @@ module.exports = {
     // Object.assign(config.devServer, {
     //   public: 'localhost/acl', sockPath: '/acl/sockjs-node'
     // });
+
+    config.devtool = 'source-map';
   },
   chainWebpack: config => {
     const svgRule = config.module.rule('svg');

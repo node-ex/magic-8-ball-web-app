@@ -5,6 +5,49 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch in Chrome",
+      "url": "http://localhost",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./src/*": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "Launch Program (Node.js)",
+      "request": "launch",
+      "type": "node",
+      "protocol": "inspector",
+      "address": "localhost",
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      "sourceMaps": true,
+      "cwd": "${workspaceRoot}",
+      "outFiles": [
+        "${workspaceRoot}/dist/*.js",
+        "${workspaceRoot}/dist/**/*.js"
+      ],
+      "autoAttachChildProcesses": true,
+      "smartStep": true,
+      "program": "${file}",
+      "envFile": "${workspaceFolder}/.env",
+      "preLaunchTask": "build",
+      "showAsyncStacks": true,
+      "stopOnEntry": false,
+      "internalConsoleOptions": "openOnFirstSessionStart",
+      "console": "internalConsole"
+    },
+    {
       "name": "Node.js: Launch",
       "request": "launch",
       "type": "node",

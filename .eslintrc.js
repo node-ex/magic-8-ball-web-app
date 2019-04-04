@@ -8,7 +8,8 @@ module.exports = {
     'worker': true
   },
   plugins: [
-    'json'
+    'json',
+    'vue'
   ],
   extends: [
     'plugin:vue/recommended',
@@ -31,11 +32,11 @@ module.exports = {
       destructuring: 'all',
       ignoreReadBeforeAssign: false
     }],
-    'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single'],
+    'quote-props': ['error', 'consistent-as-needed'],
     'semi': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
-    'vue/component-name-in-template-casing': ['error', 'kebab-case']
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
