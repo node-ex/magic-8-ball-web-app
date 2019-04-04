@@ -32,16 +32,16 @@ module.exports = {
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
-  },
-  css: {
-    loaderOptions: {
-      sass: {
-        data: `
-          @import "@/assets/style/main.scss";
-        `
-      }
-    }
   }
+  // css: {
+  //   loaderOptions: {
+  //     sass: {
+  //       data: `
+  //         @import "@/assets/style/main.scss";
+  //       `
+  //     }
+  //   }
+  // }
   // assetsDir: 'static',
   // publicPath: '/acl/'
 };

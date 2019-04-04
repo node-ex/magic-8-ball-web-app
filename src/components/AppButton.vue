@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import sizeMixin from './sizeMixin';
+import sizeMixin from '@/components/sizeMixin';
 export default {
   name: 'AppButton',
   mixins: [sizeMixin],

@@ -12,12 +12,12 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="postcss">
 #app {
-  font-family: $font-family-default;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $color-primary;
+  color: blue;
   text-align: center;
 }
 
@@ -26,10 +26,10 @@
 
   a {
     font-weight: 400;
-    color: $color-primary;
+    color: blue;
 
     &.router-link-exact-active {
-      color: $color-secondary;
+      color: blue;
     }
   }
 }
