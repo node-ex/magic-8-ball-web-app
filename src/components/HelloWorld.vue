@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 class="text-orange">
+    <h1>
       {{ msg }}
     </h1>
     <p>
@@ -185,7 +185,7 @@ export default class HelloWorld extends Vue {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="postcss">
+<style scoped lang="scss">
 h3 {
   margin: 40px 0 0;
 }
@@ -201,6 +201,7 @@ li {
 }
 
 a {
+  // stylelint-disable-next-line
   color: blue;
 }
 </style>

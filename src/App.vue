@@ -12,7 +12,8 @@
   </div>
 </template>
 
-<style lang="postcss">
+<style lang="scss">
+// stylelint-disable
 #app {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,4 +34,5 @@
     }
   }
 }
+// stylelint-enable
 </style>
