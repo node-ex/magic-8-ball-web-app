@@ -19,6 +19,7 @@ module.exports = {
     'no-empty-source': null,
     'block-closing-brace-empty-line-before': null,
     'max-nesting-depth': 10,
+    'scale-unlimited/declaration-strict-value': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-function-parentheses-space-before': 'never',
     'scss/at-function-named-arguments': [

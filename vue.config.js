@@ -7,11 +7,11 @@ module.exports = {
   configureWebpack: config => {
     // Working with Webpack | Vue CLI 3
     // https://cli.vuejs.org/guide/webpack.html)
-    // Object.assign(config.resolve.alias, {
-    //   '@': path.resolve(__dirname, './src'),
-    //   '@@': path.resolve(__dirname, '.')
+    Object.assign(config.resolve.alias, {
+      '@': path.resolve(__dirname, './src'),
+      '@@': path.resolve(__dirname, '.'),
     //   icons: path.resolve(__dirname, 'node_modules/vue-ionicons/dist')
-    // });
+    });
     config.plugins.push(
       new StylelintPlugin({
         files: ['**/*.css', '**/*.scss', '**/*.vue', ],
@@ -33,15 +33,16 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
   },
-  css: {
-    loaderOptions: {
-      sass: {
-        data: `
-          @import "@/assets/style/main.scss";
-        `,
-      },
-    },
-  },
+  // css: {
+  //   extract: false,
+  //   loaderOptions: {
+  //     sass: {
+  //       data: `
+  //         @import "@/assets/style/main.scss";
+  //       `,
+  //     },
+  //   },
+  // },
   // assetsDir: 'static',
   // publicPath: '/acl/'
 };
