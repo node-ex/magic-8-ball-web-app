@@ -2,16 +2,16 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-recess-order',
-    'stylelint-config-strict-scss'
+    'stylelint-config-strict-scss',
   ],
   plugins: [
     'stylelint-scss',
-    'stylelint-color-format'
+    'stylelint-color-format',
   ],
   rules: {
     'at-rule-no-unknown': null,
     'color-format/format': {
-      format: 'hsl'
+      format: 'hsl',
     },
     'selector-max-compound-selectors': 10,
     'color-named': 'always-where-possible',
@@ -34,17 +34,17 @@ module.exports = {
           'nth',
           'quote',
           'red',
-          'counter'
-        ]
-      }
+          'counter',
+        ],
+      },
     ],
     'scss/at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
-          'value'
-        ]
-      }
-    ]
-  }
+          'value',
+        ],
+      },
+    ],
+  },
 };

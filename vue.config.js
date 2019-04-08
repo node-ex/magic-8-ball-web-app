@@ -14,7 +14,7 @@ module.exports = {
     // });
     config.plugins.push(
       new StylelintPlugin({
-        files: ['**/*.css', '**/*.scss', '**/*.vue']
+        files: ['**/*.css', '**/*.scss', '**/*.vue', ],
       })
     );
     // config.devServer = {};
@@ -38,11 +38,10 @@ module.exports = {
       sass: {
         data: `
           @import "@/assets/style/main.scss";
-        `
-      }
-    }
-  }
+        `,
+      },
+    },
+  },
   // assetsDir: 'static',
   // publicPath: '/acl/'
 };
-

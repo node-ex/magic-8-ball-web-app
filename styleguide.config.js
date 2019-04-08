@@ -6,8 +6,8 @@ module.exports = {
   defaultExample: false,
   components: './src/components/**/[A-Z]*.vue',
   ignore: [
-    './node_modules/**/*'
-  ]
+    './node_modules/**/*',
+  ],
   // sections: [
   //   {
   //     name: 'First Section',

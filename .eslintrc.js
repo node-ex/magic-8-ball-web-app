@@ -14,12 +14,14 @@ module.exports = {
   extends: [
     'plugin:vue/recommended',
     'eslint:recommended',
+    '@vue/standard',
     '@vue/typescript'
   ],
   rules: {
-    '@typescript-eslint/no-explicit-any': 'error',
+    'comma-dangle': ['error', 'always'],
     'indent': ['error', 2],
     'linebreak-style': ['error', 'unix'],
+    'object-curly-spacing': ['error', 'always'],
     'max-len': ['warn', {
       code: 80,
       ignoreComments: false,
@@ -36,7 +38,10 @@ module.exports = {
     'quote-props': ['error', 'consistent-as-needed'],
     'semi': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
+    'standard/array-bracket-even-spacing': 'off',
+    'standard/object-curly-even-spacing': 'off',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    '@typescript-eslint/no-explicit-any': 'error',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

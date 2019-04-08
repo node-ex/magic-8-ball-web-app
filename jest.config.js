@@ -29,7 +29,7 @@ module.exports = {
   coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ['/node_modules/'],
+  coveragePathIgnorePatterns: ['/node_modules/', ],
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -61,13 +61,13 @@ module.exports = {
   // environments
   globals: {
     'ts-jest': {
-      babelConfig: true
-    }
+      babelConfig: true,
+    },
   },
 
   // An array of directory names to be searched recursively up from the
   // requiring module's location
-  moduleDirectories: ['node_modules'],
+  moduleDirectories: ['node_modules', ],
 
   // An array of file extensions your modules use
   moduleFileExtensions: [
@@ -76,13 +76,13 @@ module.exports = {
     'json',
     'vue',
     'ts',
-    'tsx'
+    'tsx',
   ],
 
   // A map from regular expressions to module names that allow to stub out
   // resources with a single module
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1'
+    '^@/(.*)$': '<rootDir>/$1',
   },
 
   // An array of regexp pattern strings, matched against all module paths
@@ -137,7 +137,7 @@ module.exports = {
 
   // A list of paths to snapshot serializer modules Jest should use for
   // snapshot testing
-  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue', ],
 
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
@@ -152,12 +152,12 @@ module.exports = {
   testMatch: [
     // '<rootDir>/tests/unit/**/*.spec.(js|jsx|ts|tsx)',
     // '<rootDir>/components/**/__tests__/*.(js|jsx|ts|tsx)',
-    '<rootDir>/src/components/**/*.spec.(js|jsx|ts|tsx)'
+    '<rootDir>/src/components/**/*.spec.(js|jsx|ts|tsx)',
   ],
 
   // An array of regexp pattern strings that are matched against all test
   // paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/'],
+  testPathIgnorePatterns: ['/node_modules/', ],
 
   // The regexp pattern Jest uses to detect test files
   // testRegex: "",
@@ -182,19 +182,19 @@ module.exports = {
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
       '<rootDir>/node_modules/jest-transform-stub',
     '^.+\\.jsx?$': '<rootDir>/node_modules/babel-jest',
-    '^.+\\.tsx?$': '<rootDir>/node_modules/ts-jest'
+    '^.+\\.tsx?$': '<rootDir>/node_modules/ts-jest',
   },
 
   // An array of regexp pattern strings that are matched against all source
   // file paths, matched files will skip transformation
-  transformIgnorePatterns: ['/node_modules/'],
+  transformIgnorePatterns: ['/node_modules/', ],
 
   // An array of regexp pattern strings that are matched against all modules
   // before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
 
   // Indicates whether each individual test should be reported during the run
-  verbose: null
+  verbose: null,
 
   // An array of regexp patterns that are matched against all source file paths
   // before re-running tests in watch mode
@@ -203,4 +203,3 @@ module.exports = {
   // Whether to use watchman for file crawling
   // watchman: true,
 };
-

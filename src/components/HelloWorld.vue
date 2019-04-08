@@ -172,13 +172,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 
-  public msg_print(): void {
+  public msgPrint(): void {
     console.log(this.msg);
   }
 }
@@ -208,7 +208,6 @@ a {
 
 <docs>
 `HelloWorld` example:
-
 
 ```jsx
 <hello-world msg="Welcome to Your Vue.js + TypeScript App" />
