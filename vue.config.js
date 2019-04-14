@@ -1,3 +1,6 @@
+// Complete Vue Webpack config can be inspected using `vue inspect` command.
+// Source: [Working with Webpack | Vue CLI](https://cli.vuejs.org/guide/webpack.html#inspecting-the-project-s-webpack-config)
+
 const path = require('path');
 
 const StylelintPlugin = require('stylelint-webpack-plugin');
@@ -5,8 +8,6 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
   lintOnSave: true,
   configureWebpack: config => {
-    // Working with Webpack | Vue CLI 3
-    // https://cli.vuejs.org/guide/webpack.html)
     Object.assign(config.resolve.alias, {
       '@': path.resolve(__dirname, './src'),
       '@@': path.resolve(__dirname, '.'),

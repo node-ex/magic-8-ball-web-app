@@ -168,6 +168,12 @@
         </a>
       </li>
     </ul>
+    <button
+      type="button"
+      @click="msgPrint"
+    >
+      Press me
+    </button>
   </div>
 </template>
 

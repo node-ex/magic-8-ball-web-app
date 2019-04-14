@@ -5,78 +5,34 @@
   "version": "0.2.0",
   "configurations": [
     {
+      // Universal attributes
+      "name": "Chrome (Vue CLI, Babel, TypeScript): Launch",
       "type": "chrome",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
+      "timeout": 10000,
+      "smartStep": true,
+      "sourceMaps": true,
+      // "trace": "verbose",
+      "showAsyncStacks": true,
+      "internalConsoleOptions": "openOnSessionStart",
+
+      // Chrome attributes
       "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Launch in Chrome",
-      "url": "http://localhost",
       "webRoot": "${workspaceFolder}/src",
-      "breakOnLoad": true,
       "sourceMapPathOverrides": {
-        "webpack:///./src/*": "${webRoot}/*"
-      }
-    },
-    {
-      "name": "Launch Program (Node.js)",
-      "request": "launch",
-      "type": "node",
-      "protocol": "inspector",
-      "address": "localhost",
-      "runtimeArgs": [
-        "--nolazy"
-      ],
-      "sourceMaps": true,
-      "cwd": "${workspaceRoot}",
-      "outFiles": [
-        "${workspaceRoot}/dist/*.js",
-        "${workspaceRoot}/dist/**/*.js"
-      ],
-      "autoAttachChildProcesses": true,
-      "smartStep": true,
-      "program": "${file}",
-      "envFile": "${workspaceFolder}/.env",
-      "preLaunchTask": "build",
-      "showAsyncStacks": true,
-      "stopOnEntry": false,
-      "internalConsoleOptions": "openOnFirstSessionStart",
-      "console": "internalConsole"
-    },
-    {
-      "name": "Node.js: Launch",
-      "request": "launch",
-      "type": "node",
-      "protocol": "inspector",
-      "address": "localhost",
-      "runtimeArgs": [
-        "--nolazy"
-      ],
-      "sourceMaps": true,
-      "cwd": "${workspaceRoot}",
-      "outFiles": [
-        "${workspaceRoot}/dist/*.js",
-        "${workspaceRoot}/dist/**/*.js"
-      ],
-      "autoAttachChildProcesses": true,
-      "smartStep": true,
-      "program": "${file}",
-      "envFile": "${workspaceFolder}/.env",
-      "preLaunchTask": "build",
-      "showAsyncStacks": true,
-      "stopOnEntry": false,
-      "internalConsoleOptions": "openOnFirstSessionStart",
-      "console": "internalConsole"
-    },
-    {
-      "name": "Docker: Attach to Node",
-      "type": "node",
-      "request": "attach",
-      "remoteRoot": "/usr/src/app"
+        "webpack:///*": "${webRoot}/*",
+        "webpack:///./*": "${webRoot}/*",
+        "webpack:///src/*": "${webRoot}/src/*"
+      },
+      "disableNetworkCache": true,
+      "breakOnLoad": true
+
+      // Sources
+      // * [Debugging in VS Code — Vue.js](https://vuejs.org/v2/cookbook/debugging-in-vscode.html)
+      // * [vscode-recipes/vuejs-cli at master · Microsoft/vscode-recipes](https://github.com/Microsoft/vscode-recipes/tree/master/vuejs-cli)
+      // * [Debugger for Chrome - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+      // * [Introducing Chrome Debugging for VS Code](https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code)
+      // * [Debugging in VS Code and Chrome not working with TypeScript · Issue #2897 · vuejs/vue-cli](https://github.com/vuejs/vue-cli/issues/2897)
     }
   ]
 }
